@@ -1,19 +1,3 @@
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-          'use strict';
-          window.addEventListener('load', function() {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-              form.addEventListener('submit', function(event) {
-
-                form.classList.add('was-validated');
-              }, false);
-            });
-          }, false);
-        })();
-
         function setdata(){
             document.getElementById('uname').innerText = document.getElementById('name').value;
             document.getElementById('name_declaration').innerText = document.getElementById('name').value;
@@ -96,7 +80,7 @@
             else if(document.getElementById('month').value == "Please select One.."){
                 document.getElementById('select_month_err').style.display="";
             }
-            else if(document.getElementById('year').value == "" || (document.getElementById('year').value) < 1990 || (document.getElementById('year').value) > 2019 ){
+            else if(document.getElementById('year').value == "" ){
                 document.getElementById('year_err').style.display="";
             }
             else{

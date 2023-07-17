@@ -155,7 +155,7 @@
                     </div>
 
 
-                    <form class="needs-validation" novalidate>
+                    <form>
                         <div class="form-row form-group">
                             <div class="col-md-4">
                                 <label for="name">Full name</label>
@@ -234,7 +234,7 @@
                             <div class="col-md-4">
                                 <label for="city">Graduated Year</label>
                                 <input type="number" min="1990" max="2060" class="form-control" id="year" placeholder="Enter year."  >
-                                <div style="color: red;display: none" id="year_err"> **enter valid year.</div>
+                                <div style="color: red ; display: none" id="year_err"> **enter valid year.</div>
                             </div> 
                             <div class="col-md-2">
                                 <label></label>
@@ -321,7 +321,7 @@
                             </div>
 
                             <div style="margin-bottom: 20px;">
-                                <button class="btn btn-primary" type="submit" >Submit form</button>
+                                <button class="btn btn-primary" type="button" onclick="setdata()">Submit form</button>
                                 <a href="#" class="btn btn-danger">Cancel</a>
                             </div>
 

@@ -13,7 +13,6 @@ class Register(db.Model):
     name = db.Column(db.String(20))
     roll_no = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(20))
-    mobile = db.Column(db.String(10))
     course = db.Column(db.String(20))
     year = db.Column(db.String(20))
 
